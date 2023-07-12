@@ -2,12 +2,11 @@ function Cancelar(){
     window.location.replace('index.html')
   }
 
-
 RequestEstacoes()
 
 function RequestEstacoes() {
     return new Promise((resolve, reject) => {
-      fetch('http://127.0.0.1:8000/estacoes/') // substitua pelo URL da sua API
+      fetch('http://127.0.0.1:8000/estacoes/')
         .then(response => response.json())
         .then(data => {
           resolve(data); 
@@ -57,10 +56,7 @@ function CadastrarReserva(){
     }
 
 
-    console.log(nome+"\n"+date+"\n"+periodo+"\n"+estacao)
-    
-
-    const url = 'http://127.0.0.1:8000/cadastro/'; // substitua pelo URL da sua API
+    const url = 'http://127.0.0.1:8000/cadastro/'; 
 
     const data = {
         nome_pessoa: nome,
