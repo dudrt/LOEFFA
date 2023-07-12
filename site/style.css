@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'oduda';
+    src: url('fonts/Oduda-Bold-Demo.otf') format('truetype');
+  }
+@font-face {
+    font-family: 'gotham';
+    src: url('fonts/Gotham\ Rounded\ Medium.otf') format('truetype');
+  }
+  
+
+body{
+    background-color: rgb(100, 130, 248);
+}
+
+
+.container{
+    color: white;
+    display: grid;
+    justify-items: center; 
+    align-items: center; 
+    grid-template-columns: 1fr 1fr;
+}
+.grid{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center; 
+    align-items: center ; 
+    font-family: 'gotham';
+}
+.grid_2{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-items: center; 
+    align-items: center ; 
+    font-family: 'gotham';
+}
+
+::placeholder{
+    font-family: 'gotham';
+}
+
+.reservas{
+    font-family: 'gotham';
+    width: 80%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+
+}
+.estacoes{
+    cursor: pointer;
+    font-family: 'gotham';
+    width: 80%;
+    display: table;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+h2{
+    color: white;
+    font-family: 'oduda';
+}
+
+tr,td{    
+    border: 1px white solid;
+
+}
+
+.faltou{
+    font-family: 'gotham';
+    color: rgb(126, 16, 16);
+}
+.ltr_miuda{
+    font-family:'gotham' ;
+    font-size: small;
+}
+
+.borda{
+    margin-bottom: 2%;
+    border: 1px white solid;
+
+}

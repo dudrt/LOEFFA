@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guille</title>
+    <style>@import url(style.css);</style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/logo.png" width="50%">
+    </div>
+    <br>
+    <div class="grid_2">
+        <div>
+            <center>
+                <label for="nome">Digite o nome da pessoa que fez a reserva</label><br>
+                <input type="text" id="nome" placeholder="Nome...">
+            </center>
+        </div>
+        <div>
+            <center>
+                <label for="nome">Digite o número que foi passado ao fazer a reserva</label><br>
+                <input type="number" id="id" placeholder="ID...">
+            </center>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <center><h2 style="cursor: pointer;" onclick="CancelarReserva()">Confirmar</h2>
+        <h2 style="cursor: pointer;" onclick="Cancelar()">Cancelar</h2>
+        <label class="faltou" id="faltou"></label>
+        </center>
+        <script src="script_cancelar.js"></script>
+</body>
+</html>
