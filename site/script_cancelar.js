@@ -33,12 +33,7 @@ function RequestPontuacao() {
     .then(respostas => {
       const resposta1 = respostas[0]; 
       const resposta2 = respostas[1]; 
-      
-        console.log(resposta1)
-        console.log(resposta2)
 
-
-  
       ProcessarRespostas(resposta1, resposta2);   
   
     })
@@ -47,7 +42,6 @@ function RequestPontuacao() {
     
     });
  }
-  
   
     function ProcessarRespostas(cadastro, pontuacoes) {
         
@@ -83,7 +77,7 @@ function RequestPontuacao() {
       
     }
 function AdicionarPontuacao(cadastro){
-    const url = 'http://127.0.0.1:8000/pontuacao/'; // substitua pelo URL da sua API
+    const url = 'http://127.0.0.1:8000/pontuacao/'; 
 
     const data = {
         nome_pessoa: cadastro.nome_pessoa,
@@ -113,8 +107,6 @@ function AdicionarPontuacao(cadastro){
 
 function ExcluirCadastro(id){
     const url = 'http://127.0.0.1:8000/cadastrodel/'+id;
-
-    // Dados que serão enviados no corpo da solicitação PUT
     const dados = {
       
     };
@@ -143,8 +135,6 @@ function ExcluirCadastro(id){
 
 function ModificarPontuacao(id,nome,pontuacao){
     const url = 'http://127.0.0.1:8000/pontuacaomod/'+id;
-
-// Dados que serão enviados no corpo da solicitação PUT
 const dados = {
   id: id,
   nome_pessoa: nome,
