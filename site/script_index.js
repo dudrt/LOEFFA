@@ -1,16 +1,9 @@
-
-
-
-
 function FazerReserva(){
   window.location.replace('reservar.html')
 }
 function CancelarReserva(){
   window.location.replace('cancelar.html')
 }
-
-
-
 
 
 function RequestEstacoes() {
@@ -33,7 +26,6 @@ Promise.all([RequestCadastro(), RequestEstacoes()])
 
   })
   .catch(error => {
-    console.log(error)
     Erro()
   });
 
@@ -47,8 +39,6 @@ Promise.all([RequestCadastro(), RequestEstacoes()])
   function ProcessarRespostas(cadastro, estacoes) {
 
     var tabela="<br><center><table><thead><tr><th>Pessoa</th><th>Data</th><th>Período</th><th>Reservado</th></tr></thead><tbody>"
-    console.log(cadastro)
-    console.log(estacoes)
     
     for(var i=0;i<cadastro.length;i++){
       tabela+=`<tr><td>${cadastro[i].nome_pessoa}</td><td>${cadastro[i].data}</td><td>${cadastro[i].periodo}</td>`
